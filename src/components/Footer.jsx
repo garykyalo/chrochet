@@ -2,6 +2,7 @@ import React from 'react';
 import { Facebook, Instagram, Twitter, Mail, Phone, MapPin } from 'lucide-react';
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <footer className="footer">
       <div className="container">
@@ -61,7 +62,7 @@ const Footer = () => {
               </div>
               <div className="d-flex align-items-center mb-2">
                 <Phone size={16} className="me-2" />
-                <span>+1 (555) 123-CRAFT</span>
+                <span>+1 *** *****</span>
               </div>
               <div className="d-flex align-items-center">
                 <MapPin size={16} className="me-2" />
@@ -85,7 +86,7 @@ const Footer = () => {
         </div>
         
         <div className="footer-bottom">
-          <p>&copy; 2024 CraftConnect. All rights reserved. Made with ❤️ for the crochet community.</p>
+          <p>&copy; {currentYear} CraftConnect. All rights reserved. Made with ❤️ for the crochet community.</p>
         </div>
       </div>
     </footer>
